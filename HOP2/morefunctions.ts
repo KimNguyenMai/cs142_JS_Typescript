@@ -1,16 +1,13 @@
 //optional parameters
 function doSomething(action: string, object?: string)
+//'?' declare optional parameter
 {
     console.log(action, (object || 'nothing')+ '.');
+    //if no input given for para object, then will print default "nothing"
 }
 
 doSomething('Read');
 doSomething('Read', 'a book');
-
-/*question1: what is '?' after object?
-
-question2: after || is optional? if no input given, then will print default "nothing"?
-*/
 
 //default parameters
 function printSomething(noun:string, times:number = 5)
